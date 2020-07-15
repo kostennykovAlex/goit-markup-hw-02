@@ -22,7 +22,13 @@
     letter-spacing: 0.03em;
  }
 
+.logo{
+color: #2196F3;
+}
 
+li{
+    list-style: none;
+}
 
 
 
