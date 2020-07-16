@@ -30,6 +30,26 @@ li{
     list-style: none;
 }
 
+.site-nav a{
+    color: #212121;
+}
 
+.project{
+    color: #757575;
+}
 
+.portfolio{
+    color: #212121;
+}
+
+.heading{
+    color: #212121;
+}
+
+.info{
+    color: #212121;
+}
+.contact{
+    color: #212121;
+}
 
