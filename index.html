@@ -7,17 +7,16 @@
 		<title>Web Studio</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;
-            500;700;900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
 	<body>
 		<!----header---->
-		<header class="page-header">
+		<header>
 			<nav>
-				<a href="index.html">
-					<span class="accent-logo">Web</span>
+				<a href="index.html" class="logo-link">
+					<span class="logo-accent">Web</span>
 					Studio
 				</a>
 				<!----Info---->
@@ -32,11 +31,16 @@
 						<a href="">Контакты</a>
 					</li>
 				</ul>
+				<!----contact---->
+				<ul class="contacts list">
+					<li>
+						<a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+					</li>
+					<li>
+						<a href="tel:+380961111111" class="contacts">+380961111111</a>
+					</li>
+				</ul>
 			</nav>
-			<ul class="contacts list">
-				<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li><a href="tel:+380961111111">+380961111111</a></li>
-			</ul>
 		</header>
 
 		<!----blok Hero---->
@@ -50,32 +54,32 @@
 			<!----features---->
 			<section>
 				<h2>Особенности</h2>
-				<ul class="list">
+				<ul class="product features">
 					<li>
 						<img src="./img/antenna.svg" alt="" width="70" />
 						<h3>Внимание к деталям</h3>
-						<p>
+						<p class="project">
 							Идейные соображения, а также начало повседневной работы пформированию позиции
 						</p>
 					</li>
 					<li>
 						<img src="./img/clock.svg" alt="" width="70" />
 						<h3>Пунктуальность</h3>
-						<p>
+						<p class="project">
 							Задача организации, в особенности же рамки и место обучения кадровлечет засобой.
 						</p>
 					</li>
 					<li>
 						<img src="./img/diagram.svg" alt="" width="70" />
 						<h3>Планирование</h3>
-						<p>
+						<p class="project">
 							Равным образом консультация с широким активом в значительнойстепенобуславливает.
 						</p>
 					</li>
 					<li>
 						<img src="./img/astronaut.svg" alt="" width="70" />
 						<h3>Современные технологии</h3>
-						<p>
+						<p class="project">
 							Значимость этих проблем настолько очевидна, что реализация плановызаданий.
 						</p>
 					</li>
@@ -111,13 +115,13 @@
 			<!----our team---->
 			<section>
 				<h2>Наша команда</h2>
-				<ul class="list">
+				<ul class="our-team">
 					<li>
 						<img src="./img/nikolay.jpg" alt="Nikolay Kucherenko" width="270" height="260" />
 						<h3>Николай Кучеренко</h3>
 						<p lang="en">Product Designer</p>
-						<ul class="social-links list">
-							<li>
+						<ul class="our-team">
+							<li class="list">
 								<a href="#" target="_blank">
 									<img src="./img/portfolio/social-link/inst-ellipse.svg" alt="instagram" />
 								</a>
@@ -139,7 +143,7 @@
 						<img src="./img/olga.jpg" alt="Olga Ivanova" width="270" height="260" />
 						<h3>Ольга Иванова</h3>
 						<p lang="en">Frontend Developer</p>
-						<ul class="social-links list">
+						<ul class="our-team">
 							<li>
 								<a href="#" target="_blank">
 									<img src="./img/portfolio/social-link/inst-ellipse.svg" alt="instagram" />
@@ -163,9 +167,11 @@
 						<img src="./img/andrey.jpg" alt="Andrey Shevchenko" width="270" height="260" />
 						<h3>Андрей Шевченко</h3>
 						<p lang="en">Frontend Developer</p>
-						<ul class="social-links list">
+						<ul class="our-team">
 							<li>
-								<a href="#" target="_blank"><img src="./img/portfolio/social-link/inst-ellipse.svg"instagram"></a>
+								<a href="#" target="_blank" class="list">
+									<img src="./img/portfolio/social-link/inst-ellipse.svg"instagram">
+								</a>
 							</li>
 							<li>
 								<a href="#" target="_blank"><img src="./img/portfolio/social-link/twit-ellipse.svg" alt="twitter" /></a>
@@ -186,7 +192,7 @@
 			<!----regular customers---->
 			<section>
 				<h2>Постоянные клиенты</h2>
-				<ul class="regular-customers list">
+				<ul class="regular-customers">
 					<li>
 						<a href="" aria-label="">YA & CO</a>
 					</li>
@@ -212,8 +218,8 @@
 		<!--footer-->
 		<footer class="bg-color">
 			<div>
-				<a href="">
-					<span class="accent-logo">Web</span>
+				<a href="index.html" class="studio">
+					<span class="logo-footer">Web</span>
 					Studio
 				</a>
 			</div>
@@ -223,11 +229,11 @@
 				<address>
 					г. Киев, пр-т Леси Украинки, 26
 					<br />
-					<a href="mailto:info@example.com">
+					<a href="mailto:info@example.com" class="contacts-adres">
 						info@example.com
 					</a>
 					<br />
-					<a href="tel:+380961111111">
+					<a href="tel:+380961111111" class="contacts-adres">
 						+380961111111
 					</a>
 				</address>
