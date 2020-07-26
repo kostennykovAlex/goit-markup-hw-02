@@ -6,97 +6,85 @@
 /* белый #FFFFFF */
 /* черный #000000 */
 
-
-:root{
---primary-text-color: #757575;
---title-text-color: #212121;
---accent-collor: #2196f3;
---background-color: #ffffff;
---background: #2F303A; --footer
+:root {
+	--primary-title-color: #212121;
+	--primary-text-color: #757575;
+	--primary-white-color: #ffffff;
+	--primary-black-color: #000000;
+	--secondary-bg-color: #f5f4fa;
+	--footer-bg-color: #2f303a;
+	--accent-color: #2196f3;
 }
+
 /* body */
-.body{
-    font-family: Roboto, sans-serif;
-    background-color: var(--background-color);
-    color: var(--primary-text-color);
-    letter-spacing: 0.03em;
- }
-
-#title {
-  font-weight: ;
-  color: ;
+body {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+	background: #ffffff;
 }
-/*page-header*/
-.page-header{
-
+/* logo accent Web Studio */
+.accent {
+	color: var(--accent-color);
 }
-/*menu-site*/
-.menu-site li {
-  box-sizing: var(--primary-text-color);
+/* contacts list */
+.contacts,
+.contacts-adres {
+	color: var(--primary-text-color);
 }
-/*accent-logo*/
-.accent-logo{
-color: #2196F3;
+/* logo link Web Studio */
+.link {
+	color: var(--primary-black-color);
 }
-
-li{
-    list-style: none;
+/* ul class="list */
+.list {
+	list-style: none;
 }
-
-.project{
-    color: #757575;
+/* site-navigator a */
+.site-nav a {
+	color: var(--primary-title-color);
 }
-
-.portfolio{
-    color: #212121;
+/* site-nav :hover for list */
+.list :hover,
+.list :focus {
+	color: var(--accent-color);
 }
-
-.heading{
-    color: #212121;
+/* section portfolio filter */
+.filter {
+	list-style: none;
 }
-
-/*contact*/
-.contacts{
-    color: #212121;
+/* section portfolio menu */
+.portfolio .menu {
+	list-style: none;
 }
- /*saite nav*/
-.site-nav:hover{
-    color: #000000;  
+/* section portfolio-project */
+.project {
+	color: #757575;
 }
-
-.contacts :hover{
-    color: #000000;
-}
-/*saite nav*/
-.link :hover{
-color: #000000
-}
-/*span accent*/
-.accent-logo:hover{
-color: 
-}
-/*social-links*/
-.social-links  {
-  color: teal;
-}
-/*social-links*/
-.social-links:hover {
-  color: orange;
-}
-/*social-links*/
-.site-nav:hover {
-    color: orange;
+/* site button */
+.button {
+	background-color: var(--secondary-bg-color);
+	border-radius: 4px;
 }
 
-.list:focus {
-    color: #2196F3;
+/* footer bg-color */
+.bg-color {
+	background-color: var(--footer-bg-color);
+}
+/* Особенности */
+.features {
+	color: var(--primary-white-color);
 }
 
-/*regular-customers*/
-.regular-customers{
-
+/* чем мы занимаемся */
+.applications {
+	list-style: none;
+	background: rgba(47, 48, 58, 0.8);
 }
-/*autorisation*/
-.auts-nav{
-
+/* web-studio footer */
+.logo-footer {
+	color: var(--accent-color);
+}
+/* web-studio footer */
+.studio {
+	color: var(--primary-white-color);
 }
