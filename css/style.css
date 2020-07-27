@@ -115,3 +115,11 @@ body {
 .regular-customers {
 	list-style: none;
 }
+
+.networks {
+	color: var(--primary-white-color);
+}
+
+.contacts-footer {
+	color: var(--primary-white-color);
+}
