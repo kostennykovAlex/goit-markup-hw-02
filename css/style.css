@@ -19,26 +19,34 @@
 /* body */
 body {
 	font-family: "Roboto", sans-serif;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.06em;
 }
 
 /* logo accent Web Studio */
 .accent {
+	text-decoration: none;
 	color: var(--accent-color);
+}
+
+.adress {
+	color: var(--primary-white-color);
 }
 
 /* contacts list */
 .contacts,
 .contacts-adres {
 	color: var(--primary-text-color);
+	text-decoration: none;
+	list-style: none;
 }
 
 /* logo link Web Studio */
 .link {
+	text-decoration: none;
 	color: var(--primary-black-color);
 }
 
-/* ul class="list */
+/* header */
 .list {
 	list-style: none;
 }
@@ -46,6 +54,7 @@ body {
 /* site-navigator a */
 .site-nav a {
 	color: var(--primary-title-color);
+	text-decoration: none;
 }
 
 /* our-team */
@@ -94,16 +103,18 @@ body {
 /* Чем мы заниамемся */
 .sections-duties {
 	list-style: none;
+	text-decoration: none;
 }
-
 .duties {
 	background: rgba(47, 48, 58, 0.8);
 	color: var(--primary-white-color);
+	text-decoration: none;
 }
 
 /*  web-studio heder */
 .logo-link {
 	color: var(--primary-black-color);
+	text-decoration: none;
 }
 
 /* web-studio heder */
@@ -119,6 +130,7 @@ body {
 /* web-studio footer */
 .studio {
 	color: var(--primary-white-color);
+	text-decoration: none;
 }
 
 /* regular-customers */
@@ -132,4 +144,11 @@ body {
 /* address */
 .contacts-footer {
 	color: var(--primary-white-color);
+	list-style: none;
+}
+
+/* product-features */
+.product-features {
+	list-style: none;
+	text-decoration: none;
 }

@@ -6,6 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Web Studio</title>
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/normalize.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
@@ -32,13 +33,13 @@
 					</li>
 				</ul>
 				<!----contact---->
-				<ul class="contacts list">
+				<ul class="contacts-footer list">
 					<li>
-						<a href="mailto:info@devstudio.com" class="contacts">info@devstudio.com</a>
+						<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="contacts">
+							info@devstudio.com
+						</a>
 					</li>
-					<li>
-						<a href="tel:+380961111111" class="contacts">+380961111111</a>
-					</li>
+					<li><a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -54,7 +55,7 @@
 			<!----features---->
 			<section>
 				<h2>Особенности</h2>
-				<ul class="product features">
+				<ul class="product-features">
 					<li>
 						<img src="./img/antenna.svg" alt="" width="70" />
 						<h3>Внимание к деталям</h3>
@@ -93,7 +94,7 @@
 					<li>
 						<a href="">
 							<h3 class="duties">Десктопные приложения</h3>
-							<img src="./img/desktop.jpg" alt="Десктоп" width="370" height="295" />
+							<img src="./img/desktop.jpg" alt="Десктоп" width="370" height="295" class="qwer" />
 						</a>
 					</li>
 
@@ -275,17 +276,17 @@
 
 			<!----address---->
 			<div>
-				<address class="contacts-footer">
+				<address class="adress">
 					<p>г. Киев, пр-т Леси Украинки, 26</p>
-					<br />
-					<a href="mailto:info@example.com" class="contacts-adres">
-						info@example.com
-					</a>
-					<br />
-					<a href="tel:+380961111111" class="contacts-adres">
-						+380961111111
-					</a>
 				</address>
+				<ul class="contacts-footer">
+					<li>
+						<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="contacts-adres">
+							info@devstudio.com
+						</a>
+					</li>
+					<li><a href="tel:+380961111111" class="contacts-adres">+38 096 111 11 11</a></li>
+				</ul>
 			</div>
 
 			<!-----social networks----->
