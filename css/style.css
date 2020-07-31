@@ -30,6 +30,7 @@ body {
 
 .adress {
 	color: var(--primary-white-color);
+	font-style: normal;
 }
 
 /* contacts list */
@@ -38,6 +39,7 @@ body {
 	color: var(--primary-text-color);
 	text-decoration: none;
 	list-style: none;
+	font-style: normal;
 }
 
 /* logo link Web Studio */
@@ -145,6 +147,9 @@ body {
 .contacts-footer {
 	color: var(--primary-white-color);
 	list-style: none;
+}
+.contacts-footer :hover {
+	color: var(--accent-color);
 }
 
 /* product-features */
