@@ -1,5 +1,5 @@
 /* цвет основного текста #757575 */
-/* вторичный цвет текста #212121 */
+/* вторичный цвет текста rgba(117, 117, 117, 1) */
 /* цвет текста для футер-адрес rgba(255, 255, 255, 0.6 */
 /* цвет фона футер #2F303A */
 /* цвет фона вторичный #F5F4FA */
@@ -10,12 +10,25 @@
 
 :root {
 	--primary-title-color: #212121;
-	--primary-text-color: #757575;
+	--primary-text-color: rgba(117, 117, 117, 1);
 	--primary-white-color: #ffffff;
 	--primary-black-color: #000000;
 	--secondary-bg-color: #f5f4fa;
 	--footer-bg-color: #2f303a;
 	--accent-color: #2196f3;
+	--primary-icons-color: #afb1b8;
+	/* RB4vGKR9mpfhzQS */
+}
+
+/* Global css properties */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 /* Global css properties */
@@ -34,6 +47,7 @@ body {
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 0.06em;
 	scroll-behavior: smooth;
+<<<<<<< Updated upstream
 	
 }
 
@@ -93,12 +107,220 @@ body {
 	letter-spacing: 0.03em;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	color: var(--primary-white-color)
+=======
+	color: var(--primary-title-color);
+	background-color: var(--primary-white-color);
 }
 
-.footer-logo-accent {
+/* Rules for reseting properties */
+.link {
+	text-decoration: none;
+}
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Container */
+.container {
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Logo Web */
+.logo {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.192;
+
+	/* identical to box height */
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: var(--primary-black-color);
+	/* shadow btn */
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo-accent {
+	color: var(--accent-color);				
+}
+
+
+/* Navigation site */
+.site-nav .link {
+	color: var(--primary-title-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+.site-nav a {
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.142;
+	letter-spacing: 0.02em;
+}
+
+
+/* Adress site  */
+.address a {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.142;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-text-color);
+}
+.address-item .link:hover,
+.address-item .link:focus {
+color: var(--accent-color);
+}
+
+/* Hero-section */
+.hero-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.363;
+
+	/* or 136% */
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+	color: var(--primary-white-color);
+}
+
+/* Hero-button */
+.hero-button {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+
+	/* identical to box height, or 187% */
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	color: var(--primary-white-color);
+
+}
+.hero-button {
+	background: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+
+
+/* visually-hidden */
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	/* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+/* Features */
+.features-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.142;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--primary-title-color);
+}
+.advantages-features .text {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.714;
+
+	/* or 171% */
+	letter-spacing: 0.03em;
+
+	color: var(--primary-text-color);
+}
+
+/* Global title site  */
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.166;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #212121;
+}
+
+/* Duties link  */
+.duties .section-link {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.142;
+	
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	
 	color: var(--accent-color);
 }
 
+/* Our team */
+.our-team-section {
+	
+	 background: var(--secondary-bg-color);
+	 
+>>>>>>> Stashed changes
+}
+.our-team .title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.187;
+
+<<<<<<< Updated upstream
+.footer-logo-accent {
+	color: var(--accent-color);
+=======
+	/* identical to box height */
+	/* text-align: center; */
+	letter-spacing: 0.03em;
+
+	color: #212121;
+>>>>>>> Stashed changes
+}
+.our-team .profession {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.187;
+
+	/* identical to box height */
+	
+	letter-spacing: 0.03em;
+
+<<<<<<< Updated upstream
 /* Navigation */
 
 
@@ -113,4 +335,65 @@ body {
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
 		U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
 		U+FEFF, U+FFFD;
+=======
+	color: var(--primary-text-color);
+}
+.our-team .card {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+	0px 1px 1px rgba(0, 0, 0, 0.14),
+	0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+}
+
+/* Footer */
+/* footer logo */
+.footer-logo {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.192;
+	text-decoration: none;
+
+	/* identical to box height */
+	letter-spacing: 0.03em;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: var(--primary-white-color)
+}
+.footer-logo-accent {
+	color: var(--accent-color);
+}
+
+/* Footer background */
+.footer {
+	background-color: var(--footer-bg-color);
+}
+
+/* Footer location */
+.footer .location {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+
+	/* or 171% */
+	letter-spacing: 0.03em;
+
+	color: var(--primary-white-color);
+}
+
+/* Footer adress */
+.footer-adress-contacts .link {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+
+	/* or 171% */
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.6);
+>>>>>>> Stashed changes
 }
