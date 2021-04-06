@@ -71,6 +71,7 @@ body {
 	margin-left: auto;
 }
 
+
 /* Logo Web */
 .logo {
 	font-family: Raleway;
@@ -101,13 +102,15 @@ body {
 	color: var(--accent-color);
 }
 .site-nav a {
-
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.142;
 	letter-spacing: 0.02em;
 }
 
+.site-nav .current {
+	color: var(--accent-color);
+}
 
 /* Adress site  */
 .address a {
@@ -244,10 +247,9 @@ color: var(--accent-color);
 
 /* Our team */
 .our-team-section {
-	
 	 background: var(--secondary-bg-color);
-	 
 }
+
 .our-team .title {
 	font-weight: 500;
 	font-size: 16px;
@@ -273,7 +275,6 @@ color: var(--accent-color);
 .our-team .card {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-
 }
 
 /* =====================Regular-customers===================== */
@@ -373,4 +374,51 @@ border-radius: 0px 0px 4px 4px;
 	letter-spacing: 0.03em;
 
 	color: rgba(255, 255, 255, 0.6);
+}
+
+/*====================== Portfolio-card page ======================*/
+/*===================== Section-button =====================*/
+.section-button {
+	margin-top: 94px;
+}
+
+.portfolio-filter {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 34px;
+}
+
+/* ================Portfolio-filter list================ */
+.portfolio-filter button {
+	padding-top: 6px;
+	padding-right: 22px;
+	padding-bottom: 6px;
+	padding-left: 22px;
+	border: transparent;
+	border-radius: 4px;
+
+	/* font-family: inherit; */
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+
+	cursor: pointer;
+
+	color: var(--primary-title-color);
+	background-color: var(--secondary-bg-color);
+
+	border-radius: 4px;	
+	
+}
+
+.portfolio-filter li:not(:last-child) {
+	margin-right: 8px;
+}
+
+.portfolio-filter button:hover,
+.portfolio-filter button:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+	background-color: var(--accent-color);
+	color: var(--primary-white-color);
 }
